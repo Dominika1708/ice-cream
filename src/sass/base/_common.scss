@@ -1,5 +1,7 @@
 body {
     font-family: getFont(main), sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 ul {
@@ -16,4 +18,12 @@ h5,
 h6,
 p {
     margin: 0;
+}
+
+img {
+    border: 0px;
+}
+
+a {
+    text-decoration: none;
 }
