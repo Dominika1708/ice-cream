@@ -1,52 +1,4 @@
 @charset "UTF-8";
-<<<<<<< HEAD
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
-}
-
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
-}
-
-.example .background {
-  height: 240px;
-  background-image: url("../images/demo.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-button {
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-=======
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
@@ -102,16 +54,48 @@ p {
 }
 
 img {
-  border: 0px;
->>>>>>> main
+  border: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-h3, p {
+.tradition {
+  background-color: pink;
+}
+
+.customer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3,
+p {
   margin: 0;
   padding: 0;
 }
@@ -131,12 +115,12 @@ h3, p {
 
 .section__title-label {
   letter-spacing: 0.04em;
-  color: #FFA5BA;
+  color: #ffa5ba;
   text-transform: uppercase;
 }
 
 .section__title {
-  color: #D41443;
+  color: #d41443;
   text-transform: uppercase;
   margin-top: 15px;
 }
@@ -153,7 +137,7 @@ h3, p {
 .products__item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   position: relative;
   border-radius: 24px;
   text-align: center;
@@ -162,22 +146,22 @@ h3, p {
 .products__item::before {
   position: absolute;
   display: block;
-  content: "";
+  content: '';
 }
 
 /* Ice Creame */
 .first-box {
-  background-color: #FFB8CA;
+  background-color: #ffb8ca;
 }
 
 /* Ice Cofee */
 .second-box {
-  background-color: #F0D1A5;
+  background-color: #f0d1a5;
 }
 
 /* MilkShake */
 .third-box {
-  background-color: #C2E297;
+  background-color: #c2e297;
 }
 
 .products-tytul {
@@ -217,7 +201,7 @@ h3, p {
 .btn {
   height: 40px;
   width: 40px;
-  color: #D41443;
+  color: #d41443;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,7 +266,7 @@ h3, p {
   .products__item::before {
     position: absolute;
     display: block;
-    content: "";
+    content: '';
     width: 249px;
     height: 252px;
     bottom: 346px;
@@ -392,7 +376,7 @@ h3, p {
   .products__item::before {
     position: absolute;
     display: block;
-    content: "";
+    content: '';
     width: 220px;
     height: 226px;
     bottom: 363px;
@@ -412,13 +396,13 @@ h3, p {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .first-box::before {
-    background-image: url(../images/products/pic1-tablet-440);
+    background-image: url(../images/products/pic1-tablet-440.png);
   }
   .second-box::before {
-    background-image: url(../images/products/pic2-tablet-440);
+    background-image: url(../images/products/pic2-tablet-440.png);
   }
   .third-box::before {
-    background-image: url(../images/products/pic3-tablet-440);
+    background-image: url(../images/products/pic3-tablet-440.png);
   }
 }
 
@@ -490,7 +474,7 @@ h3, p {
   .products__item::before {
     position: absolute;
     display: block;
-    content: "";
+    content: '';
     width: 335px;
     height: 335px;
     bottom: 400px;
@@ -510,13 +494,13 @@ h3, p {
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .first-box::before {
-    background-image: url(../images/products/pic1-desktop-670);
+    background-image: url(../images/products/pic1-desktop-670.png);
   }
   .second-box::before {
-    background-image: url(../images/products/pic2-desktop-670);
+    background-image: url(../images/products/pic2-desktop-670.png);
   }
   .third-box::before {
-    background-image: url(../images/products/pic3-desktop-670);
+    background-image: url(../images/products/pic3-desktop-670.png);
   }
 }
 
@@ -548,11 +532,11 @@ h3, p {
           justify-content: center;
   -webkit-transition: all 250ms linear;
   transition: all 250ms linear;
-  fill: #FEA5BB;
+  fill: #fea5bb;
 }
 
 .footer__social__link:hover {
-  fill: #D41443;
+  fill: #d41443;
 }
 
 /* FOOTER */
@@ -663,22 +647,5 @@ h3, p {
     margin: 10px 0;
     width: 100%;
   }
-=======
-.tradition {
-  background-color: pink;
-}
-
-.customer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
->>>>>>> main
 }
 /*# sourceMappingURL=main.css.map */
