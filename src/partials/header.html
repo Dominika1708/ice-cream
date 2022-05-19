@@ -1,9 +1,9 @@
 <body>
     <header class="header">
-        <div class="header__container">
-            <svg class="header__logo">
-                <use href=""></use>
-            </svg>
+        <div class="header__container container">
+            <a href="#" class="header__logo"></a>
+                <img srcset="#" src="#" alt="logo">
+            </a>
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -23,25 +23,87 @@
                     </li>
                 </ul>
             </nav>
-            <button class="header__button" type="button">Buy now
+            <button data-menu-open class="menu-open" type="button">
+                <svg class="menu__icon-burger">
+                    <use href="#"></use>
+                </svg>
+            </button>
+            <button class="header__button button" type="button" data-modal-open>Buy now
                 <svg class="header__button-icon">
                     <use href="#"></use>
                 </svg>
             </button>
         </div>
-        <section class="hero">
-            <div class="hero__container">
-                <img class="hero__img-ice" srce="#" alt="icecream">
+        <div data-menu class="mobile-menu is-hidden">
+            <div class="mobile-menu__container">
+                <button data-menu-close type="button" class="mobile-menu__close">
+                    <svg class="menu-icon">
+                        <use href="#"></use>
+                    </svg>
+                </button>
+                <button class="mobile-menu__button button" type="button" data-modal-open>Buy now
+                    <svg class="mobile-menu__button-icon">
+                        <use href="#"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__nav-list">
+                    <li class="mobile-menu__nav-item">
+                        <a data-menu-close href="#" class="mobile-menu__nav-link">Home</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a data-menu-close href="#" class="mobile-menu__nav-link">About us</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a data-menu-close href="#" class="mobile-menu__nav-link">How it’s made?</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a data-menu-close href="#" class="mobile-menu__nav-link">Our products</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a data-menu-close href="#" class="mobile-menu__nav-link">Contact</a>
+                    </li>
+                    <li class="mobile-menu__nav-item"></li>
+                </ul>
             </div>
-            <img class="hero__img-milk" src="#" alt="milk">
-            <img class="hero__img-girl" src="#" alt="girl">
-            <img class="hero__img-first-circle" src="#" alt="circle">
-            <img class="hero__img-secont-circle" src="#" alt="circle">
+        </div>
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__pictures">
+                    <div class="hero__eclipse">
+                        <picture class="hero__icecream">
+                            <source srcset="#"
+                                media="(min-width: 1280px)" />
+                            <source srcset="#"
+                                media="(min-width: 768px)" />
+                            <source srcset="#"
+                                media="(min-width: 320px)" />
+                            <img class="hero__img-ice" srce="#" alt="icecream">
+                        </picture>
+                        <picture class="hero__picture">
+                            <source srcset="#" media="(min-width: 1280px)" />
+                            <source srcset="#" media="(min-width: 768px)" />
+                            <img class="hero__img-milk" src="#" alt="milk">
+                        </picture>
+                        <picture class="hero__picture">
+                            <source srcset="#" media="(min-width: 1280px)" />
+                            <source srcset="#" media="(min-width: 768px)" />
+                            <img class="hero__img-girl" src="#" alt="girl">
+                        </picture>
+                        <picture class="hero__picture">
+                            <source srcset="#" media="(min-width: 1280px)" />
+                            <source srcset="#" media="(min-width: 768px)" />
+                            <img class="hero__img-first-circle" src="#" alt="circle">
+                        </picture>
+                        <picture class="hero__picture">
+                            <source srcset="#" media="(min-width: 1280px)" />
+                            <source srcset="#" media="(min-width: 768px)">
+                            <img class="hero__img-second-circle" src="#" alt="circle">
+                        </picture>
             <div class="hero__main">
                 <h1 class="hero__title">ICE CREAM MADE WITH <span class="hero__span">PASSION</span></h1>
                 <ul class="hero_aside-list">
                     <li class="hero__aside-item">
-                        <p class="hero__asaide-text"><span class="hero__span-aside">16</span>cafes</p>
+                        <p class="hero__aside-text"><span class="hero__span-aside">16</span>cafes</p>
                     </li>
                     <li class="hero__aside-item">
                         <p class="hero__aside-text"><span class="hero__span-aside">23</span>food trucks</p>
@@ -50,19 +112,20 @@
             </div>
             <ul class="hero__button-list">
                 <li class="hero__button-item">
-                    <a href="#" class="hero__button-link">Products</a>
+                    <a href="#" class="hero__button-link hero__button-pink button">Products</a>
                 </li>
                 <li class="hero__button-item">
-                    <a href="#" class="hero_button-link">How it's made?</a>
+                    <a href="#" class="hero_button-link hero__button-white button">How it's made?</a>
                 </li>
             </ul>
             <p class="hero-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                <button type="button" class="hero__arrow-button">
+                <button type="button" class="hero__arrow-button arrow-button">
                     <svg class="hero__arrow-button-icon">
                         <use href="#"></use>
                     </svg>
                 </button>
+            </div>
         </section>
     </header>
 </body>
