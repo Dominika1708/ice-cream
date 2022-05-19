@@ -267,9 +267,9 @@ h3,p{
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-         .first-box::before{background-image: url(../images/products/pic1-tablet-440);}
-         .second-box::before{background-image: url(../images/products/pic2-tablet-440);}
-         .third-box::before{background-image: url(../images/products/pic3-tablet-440);}
+         .first-box::before{background-image: url(../images/products/pic1-tablet-440.png);}
+         .second-box::before{background-image: url(../images/products/pic2-tablet-440.png);}
+         .third-box::before{background-image: url(../images/products/pic3-tablet-440.png);}
       }
     .products-tytul{
        font-size: 20px;
@@ -350,9 +350,9 @@ h3,p{
    @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-         .first-box::before{background-image: url(../images/products/pic1-desktop-670);}
-         .second-box::before{background-image: url(../images/products/pic2-desktop-670);}
-         .third-box::before{background-image: url(../images/products/pic3-desktop-670);}
+         .first-box::before{background-image: url(../images/products/pic1-desktop-670.png);}
+         .second-box::before{background-image: url(../images/products/pic2-desktop-670.png);}
+         .third-box::before{background-image: url(../images/products/pic3-desktop-670.png);}
       }
     .products-tytul{
       font-size: 30px;
