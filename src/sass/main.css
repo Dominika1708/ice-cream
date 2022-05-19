@@ -378,13 +378,13 @@ h3, p {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .first-box::before {
-    background-image: url(../images/products/pic1-tablet-440);
+    background-image: url(../images/products/pic1-tablet-440.png);
   }
   .second-box::before {
-    background-image: url(../images/products/pic2-tablet-440);
+    background-image: url(../images/products/pic2-tablet-440.png);
   }
   .third-box::before {
-    background-image: url(../images/products/pic3-tablet-440);
+    background-image: url(../images/products/pic3-tablet-440.png);
   }
 }
 
@@ -476,13 +476,13 @@ h3, p {
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .first-box::before {
-    background-image: url(../images/products/pic1-desktop-670);
+    background-image: url(../images/products/pic1-desktop-670.png);
   }
   .second-box::before {
-    background-image: url(../images/products/pic2-desktop-670);
+    background-image: url(../images/products/pic2-desktop-670.png);
   }
   .third-box::before {
-    background-image: url(../images/products/pic3-desktop-670);
+    background-image: url(../images/products/pic3-desktop-670.png);
   }
 }
 
