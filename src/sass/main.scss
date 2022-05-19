@@ -1,10 +1,19 @@
+
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
 @import './utils/variables';
+
 @import './base/container';
 @import './base/common';
-// Style dla pliku z przykładem HTML fragmentu
-@import './example';
-@import './layout/contacts.scss';
+
+
+//Section Products
+@import './components/s-products';
+@import './components/footer';
+
+
+@import './layout/about';
+@import './layout/customer-reviews';
+@import './layout/contacts';
