@@ -1,0 +1,34 @@
+$fonts: (
+    'main': 'DM Sans',              //sans-serif
+    'bold': 'Titan One',            // cursive
+);
+
+@function getFont($key) {
+    @return map-get($fonts, $key)
+}
+
+$colors: (
+    'primary': #D41443,           //ciemny róż głównie do tytułów i przycisków
+    'secondary': #FFA5BA,         //jasny róż do napisów oraz koła w hero-header
+    'white': #FFFFFF,             //biały
+    'black': #000000,             //czaeny
+    'grey':#907E82,               //szary
+    'hoverDark':#C7133E,          // niektóre przyciski na makiecie mają ciemniejszy hover inne nie mają wcale, proponuje zrobić je wszystkie takie same
+    'hoverLight': #ECEBEB         // hover dla przycisków z białym tłem
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key)
+}
+
+$backgrounds: (
+    'primary':#FFF5F6,             //do "how it's made" Contacts i Footer
+    'secondary': #FFB8CA,          //do Hero-Header i Products- ice cream
+    'coffee': #F0D1A5,             //do Products- ice coffee i Contacts- tytuły
+    'green': #C2E297,              //do Products- milkshake i Contacts- tytuł
+    'reviews': #FAFAFA,            //do Customer-reviews
+);
+
+@function getBgColor($key) {
+    @return map-get($backgrounds, $key)
+}
