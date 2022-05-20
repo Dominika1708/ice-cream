@@ -8,12 +8,9 @@
 @import './base/container';
 @import './base/common';
 
-
-//Section Products
-@import './components/s-products';
-@import './components/footer';
-
-
 @import './layout/about';
 @import './layout/customer-reviews';
+//Section Products
+@import './components/s-products';
 @import './layout/contacts';
+@import './components/footer';
