@@ -12,17 +12,35 @@
   <link rel="stylesheet" href="./sass/main.css">
 </head>
 
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+  rel="stylesheet" />
+</head>
+
 <body>
+
   <header class="container">
 
   </header>
-  <main class="container">
-    <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
+
+
+  <main>
+    <include src="./partials/Sproducts.html"></include>
     <include src="./partials/about.html"></include>
     <include src="./partials/customer-reviews.html"></include>
     <include src="./partials/contacts.html"></include>
   </main>
-  <footer class="container">
 
+
+  <footer>
+    <include src="./partials/footer.html"></include>
   </footer>
+
+  <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
+  <script src="./index.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/806b90d883.js" crossorigin="anonymous"></script>
 </body>
+
+</html>

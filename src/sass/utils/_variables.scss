@@ -32,3 +32,4 @@ $backgrounds: (
 @function getBgColor($key) {
     @return map-get($backgrounds, $key)
 }
+

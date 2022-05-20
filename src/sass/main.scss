@@ -4,23 +4,16 @@
  * Wszystkie partials podłączamy tutaj.
  */
 @import './utils/variables';
+
 @import './base/container';
-// Style dla pliku z przykładem HTML fragmentu
+@import './base/common';
+
 
 //Section Products
 @import './components/s-products';
 @import './components/footer';
 
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
-@import './utils/variables';
-
-@import './base/container';
-@import './base/common';
 
 @import './layout/about';
 @import './layout/customer-reviews';
-// Style dla pliku z przykładem HTML fragmentu
-
+@import './layout/contacts';
