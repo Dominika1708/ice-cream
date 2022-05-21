@@ -25,6 +25,16 @@ body {
   font-family: "DM Sans", sans-serif;
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 ul {
@@ -435,6 +445,9 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .customer {
+    margin-bottom: 86px;
+  }
   .customer__wrap {
     padding: 20px 50px;
     margin: 30px 0;
@@ -451,6 +464,9 @@ a {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
+  .customer {
+    margin-bottom: 119px;
+  }
   .customer__wrap {
     padding: 28px 50px;
     margin: 20px 0;
@@ -458,6 +474,9 @@ a {
 }
 
 @media screen and (min-width: 1201px) {
+  .customer {
+    margin-bottom: 132px;
+  }
   .customer__wrap {
     padding: 32px 50px;
     margin: 15px 0;
@@ -833,24 +852,21 @@ p {
 }
 
 .contacts {
-  padding-bottom: 10px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(90%, #FFF5F6), color-stop(10%, #FFFFFF));
-  background: linear-gradient(to top, #FFF5F6 90%, #FFFFFF 10%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(95%, #FFF5F6), color-stop(5%, #FFFFFF));
+  background: linear-gradient(to top, #FFF5F6 95%, #FFFFFF 5%);
 }
 
 @media screen and (min-width: 768px) {
   .contacts {
     background: -webkit-gradient(linear, left bottom, left top, color-stop(90%, #FFF5F6), color-stop(10%, #FFFFFF));
     background: linear-gradient(to top, #FFF5F6 90%, #FFFFFF 10%);
-    padding-bottom: 100px;
-
   }
 }
 
 @media screen and (min-width: 1280px) {
   .contacts {
-    background: url(/images/contacts/contacts-bg.png), -webkit-gradient(linear, left bottom, left top, color-stop(90%, #FFF5F6), color-stop(10%, #FFFFFF));
-    background: url(/images/contacts/contacts-bg.png), linear-gradient(to top, #FFF5F6 90%, #FFFFFF 10%);
+    background: url(/images/contacts/contacts-bg.png), -webkit-gradient(linear, left bottom, left top, color-stop(88%, #FFF5F6), color-stop(12%, #FFFFFF));
+    background: url(/images/contacts/contacts-bg.png), linear-gradient(to top, #FFF5F6 88%, #FFFFFF 12%);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -1230,7 +1246,6 @@ p {
   margin-top: 50px;
 }
 
-
 .footer__social__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1254,7 +1269,6 @@ p {
   fill: #D41443;
 }
 
-
 /* LINK */
 .link {
   color: #D41443;
@@ -1274,28 +1288,6 @@ p {
   color: #907E82;
   text-align: center;
 }
-
-
-/* Media480 ! */
-@media screen and (min-width: 480px), (max-width: 480px) {
-  .footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer__title-wrap {
-    text-align: left;
-    width: 55%;
-  }
-  .footer__contacts-wrap {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    width: 100%;
-    text-align: right;
-    margin-bottom: 43px;
-    font-size: 13px;
-
 
 /* Media480 ! */
 @media screen and (min-width: 480px), (max-width: 480px) {
@@ -1344,46 +1336,12 @@ p {
   }
   .footer__title-wrap {
     text-align: left;
-
   }
   .footer__contacts {
     font-size: 14px;
     line-height: 26px;
     letter-spacing: 0.01em;
   }
-
-  .copyright-terms {
-    width: 150px;
-    margin: 22px auto;
-  }
-}
-
-/* Media 768! */
-@media screen and (min-width: 768px) {
-  .footer {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .footer__title-wrap {
-    text-align: left;
-  }
-  .footer__contacts {
-    font-size: 14px;
-    line-height: 26px;
-    letter-spacing: 0.01em;
-  }
-  .footer__title-wrap {
-    width: 55%;
-  }
-  .footer__contacts-wrap {
-    width: 45%;
-  }
-  .copyright-terms {
-    margin: 10px 0;
-    width: 100%;
-
   .footer__title-wrap {
     width: 55%;
   }
@@ -1404,7 +1362,6 @@ p {
 @media screen and (min-width: 1280px) {
   .copyright {
     margin-top: 98px;
-
   }
 }
 /*# sourceMappingURL=main.css.map */
