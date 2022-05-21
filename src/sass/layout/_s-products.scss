@@ -18,6 +18,7 @@ p {
 }
 .products {
   font-family: 'Titan One', cursive;
+  padding: 120px 0;
 }
 .products__title-wrap {
   text-align: center;
@@ -178,7 +179,7 @@ p {
 /* Media 768! */
 @media screen and (min-width: 768px) {
   .products__logo {
-    margin-bottom: 30px;
+    margin-bottom: 39px;
   }
   .section__title-label {
     font-size: 26px;
@@ -243,6 +244,9 @@ p {
   }
 }
 @media screen and (min-width: 1280px) {
+   .products__logo{
+      margin-bottom: 49px;
+   }
   .section__title-label {
     font-size: 30px;
     line-height: 34px;
@@ -252,7 +256,6 @@ p {
     line-height: 66px;
     letter-spacing: 0.06em;
     margin-top: 15px;
-    margin-bottom: 49px;
   }
   .products__wrap {
     flex-direction: row;
