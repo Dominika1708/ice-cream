@@ -41,6 +41,7 @@
  @media screen and (min-width: 480px),(max-width: 480px) {
    .footer{
       flex-direction: column;
+      margin-top: 113px;
    }
    .footer__title-wrap{
       text-align: left;
@@ -60,13 +61,17 @@
    }
    .copyright-terms{
       width: 150px;
-      margin: 22px auto;
+      margin-top: 22px;
+      margin-bottom: 12px;
+      margin-right: auto;
+      margin-left: auto;
    }
  }
    /* Media 768! */
  @media screen and (min-width: 768px) {
     .footer{
        flex-direction: row;
+       margin-top: 165px;
     }
     .footer__title-wrap{
       text-align: left;
@@ -81,9 +86,19 @@
    }
    .footer__contacts-wrap{
      width: 45%;
+     margin: 0;
    }
    .copyright-terms{
-      margin: 10px 0;
+      margin-top: 10px;
+      margin-bottom: 0;
       width: 100%;
+   }
+   .copyright{
+      margin-top: 91px;
+   }
+ }
+ @media screen and (min-width: 1280px) {
+   .copyright{
+      margin-top: 98px;
    }
  }
