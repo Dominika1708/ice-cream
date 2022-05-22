@@ -1,0 +1,374 @@
+.hero {
+    padding-top: 137px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 15px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 74px;
+    }
+}
+
+.hero__container {
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-left: 115px;
+        padding-right: 115px;
+    }
+}
+
+.hero__image-milk {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        left: 34px;
+        bottom: -7px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        left: 77px;
+        bottom: 0;
+    }
+}
+
+.hero__image-girl {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        right: 34px;
+        bottom: -34px;
+        z-index: 2;
+    }
+
+    @media screen and (min-width: 1280px) {
+        right: 109px;
+        bottom: -51px;
+    }
+}
+
+.hero__image-first-dot {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        top: -2px;
+        right: 34px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        top: -5px;
+        right: 107px;
+        
+    }
+}
+
+.hero__image-second-dot {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 54px;
+        right: 34px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        top: 80px;
+        right: 107px;
+    }
+}
+
+.hero__wrap {
+    position: relative;
+    margin-bottom: 19px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 8px;
+        margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 9px;
+    }
+}
+
+.hero__title {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    
+    //@include fontStyle(400, 26, 30, 4);
+    text-transform: uppercase;
+    max-width: 218px;
+    color: getColor('white');
+
+    @media screen and (min-width: 768px) {
+        //@include fontStyle(400, 22, 25, 4);
+        max-width: 162px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        //@include fontStyle(400, 38, 44, 4);
+        max-width: 277px;
+    }
+}
+
+.hero__title-span {
+    font-family: getFont('main');
+   // @include fontStyle(400, 48, 46, 4);
+    text-transform: uppercase;
+    color: getColor('primary');
+
+    @media screen and (min-width: 768px) {
+        //@include fontStyle(400, 34, 31, 4);
+    }
+
+    @media screen and (min-width: 1280px) {
+        //@include fontStyle(400, 58, 52, 4);
+    }
+}
+
+.hero__wrap-picture {
+    position: absolute;
+    top: -110px;
+    right: -61px;
+    width: 346px;
+    height: 344px;
+
+    @media screen and (min-width: 768px) {
+        top: -61px;
+        right: 137px;
+        width: 324px;
+        height: 322px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        top: -109px;
+        right: 268px;
+        width: 538px;
+        height: 538px;
+    }
+}
+
+.hero__eclipse {
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    background-color: getColor('secondary');
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    animation-name: elipseBeats;
+    animation-duration: 3000ms;
+
+    @media screen and (min-width: 768px) {
+        top: 0;
+        right: 0;
+        width: 324px;
+        height: 322px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 538px;
+        height: 538px;
+    }
+}
+
+@keyframes elipseBeats {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.hero__image-icecream {
+    position: absolute;
+    top: 9px;
+    right: 74px;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        top: 30px;
+        right: 110px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        top: 56px;
+        right: 167px;
+    }
+}
+
+.hero__chain-list {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+}
+
+.hero__chain-item {
+    &:not(:last-child) {
+        margin-bottom: 13px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 15px;
+    }
+}
+
+.hero__chain-text {
+    //@include fontStyle(400, 8, 10, 4);
+    color: getColor('white');
+
+    @media screen and (min-width: 1280px) {
+        //@include fontStyle(400, 14, 18, 4);
+    }
+}
+
+.hero__chain-span {
+    display: block;
+    font-family: getFont('main');
+    //@include fontStyle(400, 28, 32, 4);
+    color: getColor('white');
+
+    @media screen and (min-width: 1280px) {
+        //@include fontStyle(400, 46, 53, 4);
+    }
+}
+
+.hero__button-list {
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+        position: relative;
+        z-index: 2;
+        display: flex;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 66px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 112px;
+    }
+}
+
+.hero__button-item:not(:last-child) {
+    margin-right: 8px;
+
+    @media screen and (min-width: 1280px) {
+        &:not(:last-child) {
+            margin-right: 17px;
+        }
+    }
+}
+
+.hero__button-link {
+    padding: 9px 14px;
+    //@include fontStyle(400, 8, 10, 4);
+
+    &--pink {
+        color: getColor('white');
+        background-color: getColor('white');
+
+        &:hover,
+        &:focus {
+            background-color: getColor('hoverDark');;
+            animation-name: rotateX;
+            animation-duration: 1000ms;
+        }
+    }
+
+    &--white {
+        color: getColor('white');
+        background-color: getColor('white');
+
+        &:hover,
+        &:focus {
+            background-color: getColor('hoverLight');;
+            animation-name: rotateX;
+            animation-duration: 1000ms;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        //@include fontStyle(400, 14, 18, 4);
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+.hero-text {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        max-width: 114px;
+        //@include fontStyle(400, 8, 12, 4);
+        margin-left: 120px;
+        color: getColor('white');
+        margin-bottom: 7px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        //@include fontStyle(400, 14, 20, 4);
+        max-width: 200px;
+        margin-left: 190px;
+        margin-bottom: 20px;
+    }
+}
+
+.hero__arrow-button {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 120px;
+        width: 18px;
+        height: 18px;
+        border: 0;
+        border-radius: 50%;
+        background-color: getColor('white');
+        color: getColor('white');
+
+        &:hover,
+        &:focus {
+            animation-name: rotateXArrow;
+            animation-duration: 1000ms;
+            // animation-iteration-count: infinite;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 26px;
+        height: 26px;
+        margin-left: 190px;
+    }
+}
+
+.hero__arrow-button-icon {
+    fill: currentColor;
+}
