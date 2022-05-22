@@ -2,8 +2,8 @@
   <div class="header__container container">
     <a href="#" class="header__logo">
       <img
-        srcset="./images/hero-header/logo-199.png, ./images/hero-header/logo-398.png"
         src="./images/hero-header/logo-199.png"
+        srcset="./images/hero-header/logo-398.png 2x"
         alt="logo"
       />
     </a>
@@ -83,24 +83,27 @@
         <picture class="hero__icecream">
           <source
             srcset="
-              ./images/hero-header/ice-cream-desktop-236.png,
-              ./images/hero-header/ice-cream-desktop-472.png
+              ./images/hero-header/ice-cream-desktop-236.png 236w,
+              ./images/hero-header/ice-cream-desktop-472.png 472w
             "
             media="(min-width: 1280px)"
+            sizes="(min-width: 236px) 236px, 100vw"
           />
           <source
             srcset="
-              ./images/hero-header/ice-cream-tablet-143.png,
-              ./images/hero-header/ice-cream-tablet-286.png
+              ./images/hero-header/ice-cream-tablet-143.png 143w,
+              ./images/hero-header/ice-cream-tablet-286.png 286w
             "
-            media="(min-width: 768px)"
+            media="(min-width: 769px) and (max-width: 1280px)"
+            sizes="(min-width: 143px) 143px, 100vw"
           />
           <source
             srcset="
-              ./images/hero-header/ice-cream-mobile-171.png,
-              ./images/hero-header/ice-cream-mobile-342.png
+              ./images/hero-header/ice-cream-mobile-171.png 171w,
+              ./images/hero-header/ice-cream-mobile-342.png 342w
             "
-            media="(min-width: 320px)"
+            media="(max-width: 768px)"
+            sizes="(min-width: 171px) 171px, 100vw"
           />
           <img
             class="hero__image-icecream"
@@ -112,49 +115,53 @@
       <picture class="hero__picture">
         <source
           srcset="
-            ./images/hero-header/milk-desktop-188.png,
-            ./images/hero-header/milk-desktop-376.png
+            ./images/hero-header/milk-desktop-188.png 188w,
+            ./images/hero-header/milk-desktop-376.png 376w
           "
           media="(min-width: 1280px)"
+            sizes="(min-width: 188px) 188px, 100vw"
         />
         <source
           srcset="
-            ./images/hero-header/milk-tablet-124.png,
-            ./images/hero-header/milk-tablet-248.png
+            ./images/hero-header/milk-tablet-124.png 124w,
+            ./images/hero-header/milk-tablet-248.png 248w
           "
-          media="(min-width: 768px)"
+          media="(min-width: 769px) and (max-width: 1280px)"
+            sizes="(min-width: 124px) 124px, 100vw"
         />
         <img class="hero__image-milk" src="./images/hero-header/milk-tablet-124.png" alt="milk" />
       </picture>
       <picture class="hero__picture">
         <source
           srcset="
-            ./images/hero-header/girl-desktop-293.png,
-            ./images/hero-header/girl-desktop-586.png
+            ./images/hero-header/girl-desktop-293.png 293w,
+            ./images/hero-header/girl-desktop-586.png 586w
           "
           media="(min-width: 1280px)"
+            sizes="(min-width: 293px) 293px, 100vw"
         />
         <source
           srcset="
-            ./images/hero-header/girl-tablet-168.png,
-            ./images/hero-header/girl-tablet-336.png
+            ./images/hero-header/girl-tablet-168.png 168w,
+            ./images/hero-header/girl-tablet-336.png 336w
           "
-          media="(min-width: 768px)"
+          media="(min-width: 769px) and (max-width: 1280px)"
+            sizes="(min-width: 168px) 168px, 100vw"
         />
         <img class="hero__image-girl" src="./images/hero-header/girl-desktop-293.png" alt="girl" />
       </picture>
       <picture class="hero__picture">
         <source
           srcset="
-            ./images/hero-header/header-dot-1200@1x.png,
-            ./images/hero-header/header-dot-1200@2x.png
+            ./images/hero-header/header-dot-1200@1x.png 1x,
+            ./images/hero-header/header-dot-1200@2x.png 2x
           "
           media="(min-width: 1280px)"
         />
         <source
           srcset="
-            ./images/hero-header/header-dot-768@1x.png,
-            ./images/hero-header/header-dot-768@2x.png
+            ./images/hero-header/header-dot-768@1x.png 1x,
+            ./images/hero-header/header-dot-768@2x.png 2x
           "
           media="(min-width: 768px)"
         />

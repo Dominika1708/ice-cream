@@ -53,7 +53,7 @@ a {
 
 .header {
   position: relative;
-  background-color: #FFA5BA;
+  background-color: #FFB8CA;
   overflow-x: hidden;
   padding-top: 6px;
   padding-bottom: 155px;
@@ -403,9 +403,14 @@ a {
   top: 0;
   left: 0;
   z-index: 2;
+  font-family: "Titan One";
   text-transform: uppercase;
   max-width: 218px;
   color: #FFFFFF;
+  font-size: 38px;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
@@ -557,8 +562,9 @@ a {
 
 .hero__chain-span {
   display: block;
+  font-size: 46px;
   font-family: "Titan One";
-  color: #FFFFFF;
+  color: #D41443;
 }
 
 .hero__button-list {
