@@ -30,8 +30,12 @@
    transition: all 250ms linear;
    fill: #FEA5BB;
 }
-.footer__social__link:hover{
+.footer__social__link:hover,
+.footer__social__link:focus{
    fill: #D41443;
+   background-color: getColor(hoverDark);
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
  }
 /* LINK */
 .link{
