@@ -112,11 +112,15 @@
     top: 0;
     left: 0;
     z-index: 2;
-    
+    font-family: getFont('bold');
     //@include fontStyle(400, 26, 30, 4);
     text-transform: uppercase;
     max-width: 218px;
     color: getColor('white');
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 
     @media screen and (min-width: 768px) {
         //@include fontStyle(400, 22, 25, 4);
@@ -247,9 +251,10 @@
 
 .hero__chain-span {
     display: block;
+    font-size: 46px;
     font-family: getFont('bold');
     //@include fontStyle(400, 28, 32, 4);
-    color: getColor('white');
+    color: getColor('primary');
 
     @media screen and (min-width: 1280px) {
         //@include fontStyle(400, 46, 53, 4);
