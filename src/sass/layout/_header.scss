@@ -41,7 +41,7 @@
 
 .nav {
     display: none;
-    font-family: getFont('bold');
+    font-family: getFont('main');
     @media screen and (min-width: 1280px) {
         display: block;
         margin-right: 90px;

@@ -40,9 +40,9 @@
     opacity: 1;
     transform: translateX(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-image: url('/images/mob-frame.svg'), url('/images/mob-frame.svg'),
-        url('/images/mob-frame.svg'), url('/images/mob-frame.svg'),
-        url('/images/mob-frame.svg');
+    background-image: url('../images/mob-frame.svg'), url('../images/mob-frame.svg'),
+        url('../images/mob-frame.svg'), url('../images/mob-frame.svg'),
+        url('../images/mob-frame.svg');
     background-repeat: no-repeat;
     background-position: 0 137px, 0 179px, 0 221px, 0 263px, 0 305px;
 

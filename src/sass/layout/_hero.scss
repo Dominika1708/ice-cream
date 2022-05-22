@@ -130,7 +130,7 @@
 }
 
 .hero__title-span {
-    font-family: getFont('main');
+    font-family: getFont('bold');
    // @include fontStyle(400, 48, 46, 4);
     text-transform: uppercase;
     color: getColor('primary');
@@ -247,7 +247,7 @@
 
 .hero__chain-span {
     display: block;
-    font-family: getFont('main');
+    font-family: getFont('bold');
     //@include fontStyle(400, 28, 32, 4);
     color: getColor('white');
 
