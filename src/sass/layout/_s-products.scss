@@ -103,11 +103,21 @@ p {
 .btn {
   height: 40px;
   width: 40px;
-  color: #d41443;
+  color: getColor(primary);
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
+}
+.products__btn:hover,
+.products__btn:focus {
+   background-color: getColor(hoverDark);
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.products__btn:hover,
+.products__btn:focus {
+   background:  getColor(hoverLight);
 }
 /* Media480 ! */
 @media screen and (min-width: 480px), (max-width: 480px) {
@@ -164,6 +174,9 @@ p {
     }
     .third-box::before {
       background-image: url(../images/products/pic3-mobile-498.png);
+    }
+    .products__item::before{
+      background-size: 252px;
     }
   }
   .products-tytul {
@@ -232,6 +245,9 @@ p {
     .third-box::before {
       background-image: url(../images/products/pic3-tablet-440.png);
     }
+    .products__item::before{
+      background-size: 220px;
+    }
   }
   .products-tytul {
     font-size: 20px;
@@ -294,6 +310,9 @@ p {
     }
     .third-box::before {
       background-image: url(../images/products/pic3-desktop-670.png);
+    }
+    .products__item::before{
+      background-size: 335px;
     }
   }
   .products-tytul {
