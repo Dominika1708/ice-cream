@@ -15,6 +15,7 @@
         "layout/_s-products.scss",
         "layout/_contacts.scss",
         "layout/_footer.scss"
+
     ],
     "names": [],
     "file": "main.css"
