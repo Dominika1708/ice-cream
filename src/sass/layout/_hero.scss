@@ -290,7 +290,7 @@
 
     &--pink {
         color: getColor('white');
-        background-color: getColor('white');
+        background-color: getColor('primary');
 
         &:hover,
         &:focus {
@@ -301,7 +301,7 @@
     }
 
     &--white {
-        color: getColor('white');
+        color: getColor('primary');
         background-color: getColor('white');
 
         &:hover,

@@ -605,7 +605,7 @@ a {
 
 .hero__button-link--pink {
   color: #FFFFFF;
-  background-color: #FFFFFF;
+  background-color: #D41443;
 }
 
 .hero__button-link--pink:hover, .hero__button-link--pink:focus {
@@ -617,7 +617,7 @@ a {
 }
 
 .hero__button-link--white {
-  color: #FFFFFF;
+  color: #D41443;
   background-color: #FFFFFF;
 }
 
