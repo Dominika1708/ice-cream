@@ -1,10 +1,8 @@
+
 body {
   font-family: getFont(main), sans-serif;
   padding: 0;
   margin: 0;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
 ul {
@@ -24,7 +22,7 @@ p {
 }
 
 img {
-    border: 0;
+  border: 0;
 }
 
 a {
