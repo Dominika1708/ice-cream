@@ -54,6 +54,7 @@ a {
 .header {
   position: relative;
   background-color: #ffb8ca;
+  overflow: hidden;
   padding-top: 6px;
   padding-bottom: 155px;
 }
@@ -1142,6 +1143,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 #crosssection-photo {
