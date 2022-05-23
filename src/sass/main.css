@@ -952,6 +952,9 @@ a {
 .mob-menu__button-icon {
   margin-left: 28px;
   fill: currentColor;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media screen and (min-width: 768px) {
