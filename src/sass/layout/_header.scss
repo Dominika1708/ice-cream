@@ -1,7 +1,7 @@
 .header {
     position: relative;
-    background-color: getBgColor('secondary');
-    overflow-x: hidden;
+    background-color: #ffb8ca;
+
     padding-top: 6px;
     padding-bottom: 155px;
 
@@ -41,7 +41,8 @@
 
 .nav {
     display: none;
-    font-family: getFont('main');
+    font-family: 'DM Sans', sans-serif;
+
     @media screen and (min-width: 1280px) {
         display: block;
         margin-right: 90px;
@@ -50,6 +51,9 @@
 
 .nav_list {
     display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
 }
 
 .nav__item:not(:last-child) {
@@ -91,40 +95,47 @@
 }
 
 .nav__link {
-    //@include fontStyle(700, 16, 21, 4);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3125;
+    letter-spacing: .04em;
     padding-top: 14px;
     padding-bottom: 14px;
-    color: getColor('white');;
+    color: #ffffff;
 
     &:hover,
     &:focus {
         animation-name: rotateY;
         animation-duration: 1000ms;
-        color: getColor('white');;
+        color: #d41443;
     }
 
     &--current {
-        color: getColor('white');;
+        color: #d41443;
     }
 }
 
 .header__button {
     display: none;
+    border-color: transparent;
 
     @media screen and (min-width: 768px) {
-        //@include fontStyle(700, 16, 21, 4);
         display: inline-flex;
         align-items: center;
         padding: 13px 37px;
         margin-left: 30px;
         border-radius: 22px;
-        background-color: getColor('white');
-;
-        color: getColor('primary');;
+        background-color: #ffffff;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.286;
+        position: relative;
+        ;
+        color: #d41443;
 
         &:hover,
         &:focus {
-            background-color: getColor('hoverLight');;
+            background-color: #ecebeb;
             animation-name: rotateX;
             animation-duration: 1000ms;
         }
