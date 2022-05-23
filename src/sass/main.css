@@ -53,8 +53,7 @@ a {
 
 .header {
   position: relative;
-  background-color: #FFB8CA;
-  overflow-x: hidden;
+  background-color: #ffb8ca;
   padding-top: 6px;
   padding-bottom: 155px;
 }
@@ -106,7 +105,7 @@ a {
 
 .nav {
   display: none;
-  font-family: "DM Sans";
+  font-family: 'DM Sans', sans-serif;
 }
 
 @media screen and (min-width: 1280px) {
@@ -120,6 +119,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
 }
 
 .nav__item:not(:last-child) {
@@ -201,9 +203,13 @@ a {
 }
 
 .nav__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3125;
+  letter-spacing: .04em;
   padding-top: 14px;
   padding-bottom: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .nav__link:hover, .nav__link:focus {
@@ -211,15 +217,16 @@ a {
           animation-name: rotateY;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
-  color: #FFFFFF;
+  color: #d41443;
 }
 
 .nav__link--current {
-  color: #FFFFFF;
+  color: #d41443;
 }
 
 .header__button {
   display: none;
+  border-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
@@ -233,11 +240,15 @@ a {
     padding: 13px 37px;
     margin-left: 30px;
     border-radius: 22px;
-    background-color: #FFFFFF;
-    color: #D41443;
+    background-color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.286;
+    position: relative;
+    color: #d41443;
   }
   .header__button:hover, .header__button:focus {
-    background-color: #ECEBEB;
+    background-color: #ecebeb;
     -webkit-animation-name: rotateX;
             animation-name: rotateX;
     -webkit-animation-duration: 1000ms;
@@ -403,32 +414,64 @@ a {
   top: 0;
   left: 0;
   z-index: 2;
-  font-family: "Titan One";
+  font-family: 'Titan One', sans-serif;
+  color: #ffffff;
+  font-family: Titan One, cursive;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.1538461538;
+  letter-spacing: .04em;
   text-transform: uppercase;
   max-width: 218px;
-  color: #FFFFFF;
-  font-size: 38px;
-  line-height: 44px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
   .hero__title {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.1363636364;
+    letter-spacing: .04em;
     max-width: 162px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .hero__title {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.1578947368;
+    letter-spacing: .04em;
     max-width: 277px;
   }
 }
 
 .hero__title-span {
-  font-family: "Titan One";
+  font-family: 'Titan One', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: .9583333333;
+  letter-spacing: .04em;
   text-transform: uppercase;
-  color: #D41443;
+  color: #d41443;
+  font-size: 58px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title-span {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: .9117647059;
+    letter-spacing: .04em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__title-span {
+    font-weight: 400;
+    font-size: 58px;
+    line-height: .8965517241;
+    letter-spacing: .04em;
+  }
 }
 
 .hero__wrap-picture {
@@ -461,7 +504,7 @@ a {
   position: absolute;
   bottom: 0;
   right: -20px;
-  background-color: #FFA5BA;
+  background-color: #ffa5ba;
   width: 346px;
   height: 344px;
   border-radius: 50%;
@@ -511,20 +554,20 @@ a {
 
 .hero__image-icecream {
   position: absolute;
-  top: 9px;
+  top: 8px;
   right: 74px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .hero__image-icecream {
-    top: 30px;
+    top: 22px;
     right: 110px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .hero__image-icecream {
-    top: 56px;
+    top: 39px;
     right: 167px;
   }
 }
@@ -557,14 +600,40 @@ a {
 }
 
 .hero__chain-text {
-  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: .04em;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__chain-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2857142857;
+    letter-spacing: .04em;
+  }
 }
 
 .hero__chain-span {
   display: block;
   font-size: 46px;
-  font-family: "Titan One";
-  color: #D41443;
+  font-family: 'Titan One', cursive;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.1428571429;
+  letter-spacing: .04em;
+  color: #d41443;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__chain-span {
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 1.152173913;
+    letter-spacing: .04em;
+  }
 }
 
 .hero__button-list {
@@ -607,15 +676,21 @@ a {
 
 .hero__button-link {
   padding: 9px 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2857142857;
+  letter-spacing: .04em;
+  border-radius: 20px;
+  font-family: DM Sans, sans-serif;
 }
 
 .hero__button-link--pink {
-  color: #FFFFFF;
-  background-color: #D41443;
+  color: #ffffff;
+  background-color: #d41443;
 }
 
 .hero__button-link--pink:hover, .hero__button-link--pink:focus {
-  background-color: #C7133E;
+  background-color: #c7133e;
   -webkit-animation-name: rotateX;
           animation-name: rotateX;
   -webkit-animation-duration: 1000ms;
@@ -623,12 +698,12 @@ a {
 }
 
 .hero__button-link--white {
-  color: #D41443;
-  background-color: #FFFFFF;
+  color: #d41443;
+  background-color: #ffffff;
 }
 
 .hero__button-link--white:hover, .hero__button-link--white:focus {
-  background-color: #ECEBEB;
+  background-color: #ecebeb;
   -webkit-animation-name: rotateX;
           animation-name: rotateX;
   -webkit-animation-duration: 1000ms;
@@ -644,20 +719,32 @@ a {
 
 .hero-text {
   display: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714286;
+  letter-spacing: .04em;
 }
 
 @media screen and (min-width: 768px) {
   .hero-text {
     display: block;
     max-width: 114px;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    letter-spacing: .04em;
     margin-left: 120px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 7px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .hero-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4285714286;
+    letter-spacing: .04em;
     max-width: 200px;
     margin-left: 190px;
     margin-bottom: 20px;
@@ -684,8 +771,8 @@ a {
     height: 18px;
     border: 0;
     border-radius: 50%;
-    background-color: #FFFFFF;
-    color: #FFFFFF;
+    background-color: #ffffff;
+    color: #d41443;
   }
   .hero__arrow-button:hover, .hero__arrow-button:focus {
     -webkit-animation-name: rotateXArrow;
@@ -718,12 +805,12 @@ a {
   padding: 0;
   border: 0;
   background-color: transparent;
-  color: #D41443;
+  color: #d41443;
   cursor: pointer;
 }
 
 .menu-open:hover, .menu-open:focus {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 1280px) {
@@ -737,7 +824,7 @@ a {
 }
 
 .menu-icon__color {
-  stroke: #FFFFFF;
+  stroke: #d41443;
 }
 
 .mob-menu {
@@ -747,9 +834,8 @@ a {
   height: 100vh;
   max-width: 250px;
   width: 100%;
-  background-color: rgba(225, 121, 145, 0.8);
+  background-color: rgba(225, 121, 145, 0.5);
   z-index: 6;
-  overflow: auto;
   opacity: 1;
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -814,12 +900,12 @@ a {
   padding: 0;
   border: 0;
   background-color: transparent;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
 
 .mob-menu__close:hover, .mob-menu__close:focus {
-  color: #FFFFFF;
+  color: #d41443;
 }
 
 @media screen and (min-width: 768px) {
@@ -830,15 +916,19 @@ a {
 }
 
 .mob-menu__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3125;
+  letter-spacing: .04em;
   margin-bottom: 32px;
   padding: 13px 48px;
   border-radius: 22px;
-  background-color: #FFFFFF;
-  color: #FFFFFF;
+  background-color: #ffffff;
+  color: #d41443;
 }
 
 .mob-menu__button:hover, .mob-menu__button:focus {
-  background-color: #ECEBEB;
+  background-color: #ecebeb;
   -webkit-animation-name: rotateX;
           animation-name: rotateX;
   -webkit-animation-duration: 1000ms;
@@ -876,12 +966,16 @@ a {
 }
 
 .mob-menu__nav-link {
-  font-family: "DM Sans";
-  color: #FFFFFF;
+  font-family: 'DM Sans', sans-serif, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2857142857;
+  letter-spacing: .04em;
+  color: #ffffff;
 }
 
 .mob-menu__nav-link:hover, .mob-menu__nav-link:focus {
-  color: #FFFFFF;
+  color: #d41443;
   -webkit-animation-name: rotateY;
           animation-name: rotateY;
   -webkit-animation-duration: 1000ms;
@@ -889,7 +983,7 @@ a {
 }
 
 .mob-menu__nav-link--current {
-  color: #FFFFFF;
+  color: #d41443;
 }
 
 .about {
