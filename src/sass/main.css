@@ -834,7 +834,7 @@ a {
   height: 100vh;
   max-width: 250px;
   width: 100%;
-  background-color: rgba(225, 121, 145, 0.5);
+  background-color: rgba(225, 121, 145, 0.9);
   z-index: 6;
   opacity: 1;
   -webkit-transform: translateX(0);
