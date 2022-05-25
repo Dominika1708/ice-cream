@@ -13,7 +13,7 @@
 
     &__box {
         position: relative;
-        padding: 4px 30px;
+        padding: 0px 10px;
         background-image: repeating-linear-gradient(to bottom,
             getBgColor(reviews),
             getBgColor(reviews) 30px,
@@ -31,14 +31,13 @@
 
     &__text {
         font-weight: 500;
-        font-size: 16px;
-        line-height: 186%;
+        font-size: 12px;
+        line-height: 255%;
         text-align: center;
         letter-spacing: 0.04em;
         color: #000000;
         position: relative;
         z-index: 2;
-        padding-bottom: 4px;
     }
 
     &__name {
@@ -56,7 +55,7 @@
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .customer {
         margin-bottom: 86px;
 
@@ -68,10 +67,14 @@
         &__name {
             margin: 18px 0 30px;
         }
+
+        &__text {
+            padding-top: 5px;
+        }
     }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
     .customer {
         &__box {
             padding: 2px 30px;
@@ -79,13 +82,23 @@
     }
 }
 
-@media screen and (min-width:769px) and (max-width:1200px) {
+@media screen and (min-width:768px) and (max-width:1200px) {
     .customer {
         margin-bottom: 119px;
 
         &__wrap {
             padding: 28px 50px;
             margin: 20px 0;
+            max-width: 620px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 216%;
+        }
+
+        &__text {
+            padding-top: 2px;
         }
     }
 }
@@ -97,6 +110,11 @@
         &__wrap {
             padding: 32px 50px;
             margin: 15px 0;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 186%;
         }
     }
 }

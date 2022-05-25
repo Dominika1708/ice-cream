@@ -1321,12 +1321,16 @@ a {
     font-size: 12px;
     line-height: 1.66;
   }
+  .gallery {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(24%, #FFF5F6), color-stop(24%, #FFFFFF));
+    background-image: linear-gradient(to bottom, #FFF5F6 24%, #FFFFFF 24%);
+  }
   #crosssection-photo {
     background-image: url("../images/gallery/img-mobile-364.png");
     background-size: contain;
-    background-size: 480px 183px;
-    width: 480px;
-    height: 183px;
+    background-size: 320px 122px;
+    width: 320px;
+    height: 122px;
     margin-bottom: 80px;
   }
 }
@@ -1366,7 +1370,7 @@ a {
 
 .customer__box {
   position: relative;
-  padding: 4px 30px;
+  padding: 0px 10px;
   background-image: repeating-linear-gradient(to bottom, #FAFAFA, #FAFAFA 30px, #E1E1E1 1px, #E1E1E1 31px);
 }
 
@@ -1379,14 +1383,13 @@ a {
 
 .customer__text {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 186%;
+  font-size: 12px;
+  line-height: 255%;
   text-align: center;
   letter-spacing: 0.04em;
   color: #000000;
   position: relative;
   z-index: 2;
-  padding-bottom: 4px;
 }
 
 .customer__name {
@@ -1405,7 +1408,7 @@ a {
   gap: 18px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .customer {
     margin-bottom: 86px;
   }
@@ -1416,21 +1419,32 @@ a {
   .customer__name {
     margin: 18px 0 30px;
   }
+  .customer__text {
+    padding-top: 5px;
+  }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .customer__box {
     padding: 2px 30px;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .customer {
     margin-bottom: 119px;
   }
   .customer__wrap {
     padding: 28px 50px;
     margin: 20px 0;
+    max-width: 620px;
+  }
+  .customer__text {
+    font-size: 14px;
+    line-height: 216%;
+  }
+  .customer__text {
+    padding-top: 2px;
   }
 }
 
@@ -1441,6 +1455,10 @@ a {
   .customer__wrap {
     padding: 32px 50px;
     margin: 15px 0;
+  }
+  .customer__text {
+    font-size: 16px;
+    line-height: 186%;
   }
 }
 
