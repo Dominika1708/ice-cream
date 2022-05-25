@@ -1156,6 +1156,7 @@ a {
 #crosssection-photo {
   background-image: url("../images/gallery/img-desktop-1280.png");
   background-repeat: no-repeat;
+  background-size: 1280px 100%;
   width: 1280px;
   height: 430px;
   margin-bottom: 123px;
@@ -1171,6 +1172,15 @@ a {
   .about {
     padding: 130px 36px 140px 36px;
     background-image: none;
+  }
+  .about h3 {
+    font-size: 26px;
+    line-height: 1.153;
+  }
+  .about h2 {
+    font-size: 48px;
+    line-height: 1.145;
+    letter-spacing: 0.04em;
   }
   .about__description {
     gap: 17px;
@@ -1239,7 +1249,7 @@ a {
   }
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx), (max-width: 1280px) {
+@media (min-device-pixel-ratio: 2) and (max-width: 1280px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 1280px), (min-resolution: 192dpi) and (max-width: 1280px), (min-resolution: 2dppx) and (max-width: 1280px) {
   #crosssection-photo {
     background-image: url("../images/gallery/img-tablet-1572.png");
   }
@@ -1249,7 +1259,16 @@ a {
   .about {
     padding: 125px 20px 97px 20px;
     background-image: url("../images/about/background-mobile.png");
-    background-position: top 910px left 0;
+    background-position: top 870px left 0;
+  }
+  .about h3 {
+    font-size: 18px;
+    line-height: 1.166;
+  }
+  .about h2 {
+    font-size: 34px;
+    line-height: 1.147;
+    letter-spacing: 0.04em;
   }
   .about__description {
     gap: 46px;
@@ -1322,8 +1341,8 @@ a {
     line-height: 1.66;
   }
   .gallery {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(24%, #FFF5F6), color-stop(24%, #FFFFFF));
-    background-image: linear-gradient(to bottom, #FFF5F6 24%, #FFFFFF 24%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(24%, #FFF5F6), color-stop(24%, #ffffff));
+    background-image: linear-gradient(to bottom, #FFF5F6 24%, #ffffff 24%);
   }
   #crosssection-photo {
     background-image: url("../images/gallery/img-mobile-364.png");
@@ -1335,7 +1354,7 @@ a {
   }
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx), (max-width: 768px) {
+@media (min-device-pixel-ratio: 2) and (max-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px), (min-resolution: 192dpi) and (max-width: 768px), (min-resolution: 2dppx) and (max-width: 768px) {
   #crosssection-photo {
     background-image: url("../images/gallery/img-mobile-728.png");
   }
