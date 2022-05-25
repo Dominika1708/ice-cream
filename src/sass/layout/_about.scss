@@ -299,12 +299,18 @@
     }
   }
 
+  .gallery {
+    background-image: linear-gradient(to bottom, 
+    getBgColor(primary) 24%,
+    #FFFFFF 24%);
+  }
+
   #crosssection-photo {
     background-image: url('../images/gallery/img-mobile-364.png');
     background-size: contain;
-    background-size: 480px 183px;
-    width: 480px;
-    height: 183px;
+    background-size: 320px 122px;
+    width: 320px;
+    height: 122px;
     margin-bottom: 80px;
   }
 }
