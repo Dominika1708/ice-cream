@@ -699,7 +699,7 @@ a {
 .hero__button-link {
   padding: 9px 14px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 8px;
   line-height: 1.2857142857;
   letter-spacing: .04em;
   border-radius: 20px;
@@ -736,6 +736,7 @@ a {
   .hero__button-link {
     padding-left: 24px;
     padding-right: 24px;
+    font-size: 14px;
   }
 }
 
