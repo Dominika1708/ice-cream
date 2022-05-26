@@ -1,4 +1,9 @@
  /* FOOTER */
+ footer{
+   background: linear-gradient(to top, getBgColor(primary) 100%, #FFFFFF 0%);
+ }
+ 
+ 
  .footer{
    display: flex;
    justify-content: space-between;
@@ -51,9 +56,12 @@
 //MEDIA Footer
    /* Media480 ! */
  @media screen and (min-width: 480px),(max-width: 480px) {
+   footer{
+      padding-top: 113px;
+   }
    .footer{
       flex-direction: column;
-      margin-top: 113px;
+      
    }
    .footer__title-wrap{
       text-align: left;
@@ -88,9 +96,12 @@
  }
    /* Media 768! */
  @media screen and (min-width: 768px) {
-    .footer{
+    footer{
+      padding-top: 165px
+    }
+   .footer{
        flex-direction: row;
-       margin-top: 165px;
+       ;
        align-items: flex-start;
     }
     .footer__title-wrap{
