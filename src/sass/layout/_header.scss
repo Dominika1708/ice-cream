@@ -26,10 +26,15 @@
         padding-right: 34px;
     }
 
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+        max-width: 768px;
+    }
+
     @media screen and (min-width: 1280px) {
         position: relative;
         padding-left: 46px;
         padding-right: 116px;
+        min-width: 1280px;
     }
 }
 
@@ -130,7 +135,6 @@
         font-size: 16px;
         line-height: 1.286;
         position: relative;
-        ;
         color: #d41443;
 
         &:hover,

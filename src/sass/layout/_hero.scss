@@ -18,9 +18,14 @@
         padding-right: 34px;
     }
 
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+        max-width: 768px;
+    }
+
     @media screen and (min-width: 1280px) {
         padding-left: 115px;
         padding-right: 115px;
+        min-width: 1280px;
     }
 }
 
@@ -227,7 +232,7 @@
     top: 8px;
     right: 74px;
 
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
         top: 22px;
         right: 110px;
     }

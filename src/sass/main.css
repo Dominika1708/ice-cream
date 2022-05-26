@@ -9,14 +9,14 @@
   padding: 0 20px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .container {
     max-width: 768px;
     padding: 0 34px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .container {
     max-width: 480px;
   }
@@ -97,11 +97,18 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .header__container {
+    max-width: 768px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .header__container {
     position: relative;
     padding-left: 46px;
     padding-right: 116px;
+    min-width: 1280px;
   }
 }
 
@@ -302,10 +309,17 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .hero__container {
+    max-width: 768px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .hero__container {
     padding-left: 115px;
     padding-right: 115px;
+    min-width: 1280px;
   }
 }
 
@@ -566,7 +580,7 @@ a {
   right: 74px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
   .hero__image-icecream {
     top: 22px;
     right: 110px;
@@ -997,9 +1011,28 @@ a {
   color: #d41443;
 }
 
+.advantages {
+  background-color: #FFF5F6;
+  padding: 39px 115px 140px 115px;
+}
+
+.advantages h2 {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.137;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #D41443;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
 .about {
   background-color: #FFF5F6;
-  padding: 125px 115px 140px 115px;
+  padding: 125px 115px 0px 115px;
   background-image: url("../images/about/background-desktop.png");
   background-repeat: no-repeat;
   background-position: top 342px left 0;
@@ -1168,9 +1201,17 @@ a {
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
+  .advantages {
+    padding: 66px 36px 140px 36px;
+  }
+  .advantages h2 {
+    font-size: 48px;
+    line-height: 1.145;
+    letter-spacing: 0.04em;
+  }
   .about {
-    padding: 130px 36px 140px 36px;
+    padding: 130px 36px 0px 36px;
     background-image: none;
   }
   .about h3 {
@@ -1222,7 +1263,6 @@ a {
     display: -ms-flexbox;
     display: flex;
     gap: 60px;
-    margin-top: 66px;
   }
   .about__facts li {
     width: 180px;
@@ -1255,9 +1295,17 @@ a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .advantages {
+    padding: 39px 20px 97px 20px;
+  }
+  .advantages h2 {
+    font-size: 34px;
+    line-height: 1.147;
+    letter-spacing: 0.04em;
+  }
   .about {
-    padding: 125px 20px 97px 20px;
+    padding: 125px 20px 0px 20px;
     background-image: url("../images/about/background-mobile.png");
     background-position: top 870px left 0;
   }
@@ -1796,7 +1844,16 @@ p {
   }
 }
 
+@media screen and (max-width: 1280px) {
+  .products .container {
+    max-width: 768px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
+  .products .container {
+    max-width: 1280px;
+  }
   .products__logo {
     margin-bottom: 49px;
   }
