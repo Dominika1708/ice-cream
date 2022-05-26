@@ -18,9 +18,14 @@
         padding-right: 34px;
     }
 
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+        max-width: 768px;
+    }
+
     @media screen and (min-width: 1280px) {
         padding-left: 115px;
         padding-right: 115px;
+        min-width: 1280px;
     }
 }
 
@@ -227,7 +232,7 @@
     top: 8px;
     right: 74px;
 
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
         top: 22px;
         right: 110px;
     }
@@ -323,7 +328,7 @@
 .hero__button-link {
     padding: 9px 14px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 8px;
     line-height: 1.2857142857;
     letter-spacing: .04em;
     border-radius: 20px;
@@ -357,6 +362,7 @@
     @media screen and (min-width: 1280px) {
         padding-left: 24px;
         padding-right: 24px;
+        font-size: 14px;
     }
 }
 

@@ -1,6 +1,26 @@
+.advantages {
+  background-color: getBgColor('primary');
+  padding: 39px 115px 140px 115px;
+
+  & h2 {
+    font-family: getFont('bold');
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 1.137;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: getColor('primary');
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+}
+
+
 .about {
   background-color: getBgColor('primary');
-  padding: 125px 115px 140px 115px;
+  padding: 125px 115px 0px 115px;
   background-image: url('../images/about/background-desktop.png');
   background-repeat: no-repeat;
   background-position: top 342px left 0;
@@ -148,9 +168,19 @@
 
 // ====== TABLET ======
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
+  .advantages {
+    padding: 66px 36px 140px 36px;
+
+    & h2 {
+      font-size: 48px;
+      line-height: 1.145;
+      letter-spacing: 0.04em;
+    }
+  }
+
   .about {
-    padding: 130px 36px 140px 36px;
+    padding: 130px 36px 0px 36px;
     background-image: none;
 
     & h3 {
@@ -201,7 +231,6 @@
     &__facts {
       display: flex;
       gap: 60px;
-      margin-top: 66px;
 
       & li {
         width: 180px;
@@ -242,9 +271,19 @@
 
 // ======= MOBILE =======
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .advantages {
+      padding: 39px 20px 97px 20px;
+
+      & h2 {
+        font-size: 34px;
+        line-height: 1.147;
+        letter-spacing: 0.04em;
+      }
+    }
+
   .about {
-    padding: 125px 20px 97px 20px;
+    padding: 125px 20px 0px 20px;
     background-image: url('../images/about/background-mobile.png');
     background-position: top 870px left 0;
 

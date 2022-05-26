@@ -259,7 +259,18 @@ p {
     margin-bottom: 30px;
   }
 }
+
+@media screen and (max-width:1280px) {
+  .products .container {
+    max-width: 768px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
+  .products .container {
+      max-width: 1280px;
+    }
+
    .products__logo{
       margin-bottom: 49px;
    }
