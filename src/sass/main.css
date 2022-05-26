@@ -1470,6 +1470,7 @@ a {
   color: #000000;
   position: relative;
   z-index: 2;
+  min-width: 157px;
 }
 
 .customer__name {
