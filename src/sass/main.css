@@ -1928,6 +1928,18 @@ p {
   }
 }
 
+@media screen and (max-width: 1280px) {
+  .contacts .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts .container {
+    max-width: 1280px;
+  }
+}
+
 .contacts {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(95%, #FFF5F6), color-stop(5%, #FFFFFF));
   background: linear-gradient(to top, #FFF5F6 95%, #FFFFFF 5%);
@@ -2288,6 +2300,18 @@ p {
 @media screen and (min-width: 1280px) {
   .contacts__card:not(:last-child) {
     margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  footer .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  footer .container {
+    max-width: 1280px;
   }
 }
 
